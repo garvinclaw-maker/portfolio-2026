@@ -3,95 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garvin Chanderia</title>
+    <title>Garvin Chanderia | Product Orchestrator</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
         <div class="container">
-            <a href="index.html" class="logo" style="text-decoration:none; color:inherit; font-weight:600; font-size:14px;">GC.</a>
+            <a href="index.html" class="logo" style="text-decoration:none; color:inherit; font-weight:600; font-size:16px;">GC</a>
             <div class="nav-links">
-                <a href="#about">About</a>
                 <a href="#work">Work</a>
+                <a href="#capabilities">Capabilities</a>
                 <a href="mailto:chanderia.10.garvin@gmail.com">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <header class="hero">
-            <div class="hero-header-container">
-                <img src="assets/subject_right.png" alt="" class="hero-subject-img">
-                <div class="hero-text">
-                    <h1>Garvin Chanderia</h1>
-                    <p style="margin: 0;">EA Consultant & Product Orchestrator.</p>
-                </div>
-                <img src="assets/subject_left.png" alt="" class="hero-subject-img">
+    <!-- Apple-Style Hero -->
+    <header class="hero" style="background: url('assets/ghibli/scenery.jpg') center/cover no-repeat; color: white; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="text-shadow: 0 4px 20px rgba(0,0,0,0.5);">Garvin Chanderia</h1>
+            <p style="color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">EA Consultant. Product Orchestrator.</p>
+            <div class="cta-links">
+                <a href="Garvin_LinkedIn_Profile.pdf" style="color:white; text-decoration:underline; font-size:21px; font-weight:400;">View Resume &gt;</a>
             </div>
+        </div>
+    </header>
+
+    <!-- Bento Grid Section -->
+    <section id="work" class="container">
+        <h2>Selected Work.</h2>
+        <div class="bento-grid">
             
-            <div class="cta-links" style="margin-top: 20px;">
-                <a href="Garvin_LinkedIn_Profile.pdf" style="color:var(--accent-color); text-decoration:none; font-size:17px; margin:0 10px;">Download Resume</a>
+            <!-- Featured: EA Skill -->
+            <a href="projects/ea-skill-engine.html" class="bento-item span-8 row-2">
+                <h3>EA Skill Engine.</h3>
+                <p>Autonomous mapping for enterprise architecture. Mapping complexity to clarity.</p>
+                <div style="margin-top:20px; color:var(--accent-color);">Learn more &gt;</div>
+            </a>
+
+            <!-- Audio Renamer -->
+            <a href="projects/ai-audio-renamer.html" class="bento-item span-4">
+                <h3>AI Audio Renamer</h3>
+                <p>Semantic organization for artists.</p>
+            </a>
+
+            <!-- ThrottleApp -->
+            <a href="projects/throttle-app.html" class="bento-item span-4">
+                <h3>ThrottleApp.</h3>
+                <p>Biker-tech ecosystem.</p>
+                <span class="accent-pink" style="font-size:12px; font-weight:600;">ACTIVE PROJECT</span>
+            </a>
+
+            <!-- Dentist Engine -->
+            <a href="projects/dentist-engine.html" class="bento-item span-6">
+                <h3>Dentist Revenue Engine.</h3>
+                <p>Automated growth pipeline.</p>
+            </a>
+
+            <!-- Case Study -->
+            <a href="Autonomous-Ops-Execution.pdf" class="bento-item span-6">
+                <h3>Ops Execution.</h3>
+                <p>Case study on autonomous operations.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="capabilities" class="container" style="background: #f5f5f7; border-radius: 30px; margin: 40px auto; padding: 80px 40px;">
+        <h2 style="text-align:center;">Capabilities.</h2>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
+            <div>
+                <h4 style="font-size:24px; margin-bottom:10px;">EA</h4>
+                <p style="color:var(--secondary-text)">TOGAF Frameworks & Capability Mapping</p>
             </div>
-        </header>
-
-        <section id="about">
-            <h2>About</h2>
-            <div style="font-size: 21px; color: var(--secondary-text); max-width: 800px; line-height: 1.4;">
-                <p>I specialize in bridging the gap between enterprise complexity and human-centric design. Currently an <strong>EA Consultant at Invecto Technologies</strong>, where I orchestrate digital transformations through automated capability mapping and strategic alignment.</p>
-                <br>
-                <p>My background in <strong>Analytics at Cummins India</strong> and <strong>UX Design</strong> allows me to build products that are as logical as they are intuitive. From founder-led biker tech to autonomous AI engines, I focus on creating systems that work for people.</p>
+            <div>
+                <h4 style="font-size:24px; margin-bottom:10px;">Python</h4>
+                <p style="color:var(--secondary-text)">Autonomous Engines & API Integration</p>
             </div>
-        </section>
-
-        <section id="work">
-            <h2>Work</h2>
-            <div class="projects-grid">
-                <!-- EA Skill Engine -->
-                <a href="projects/ea-skill-engine.html" class="project-card">
-                    <h3>EA AI Skill Engine</h3>
-                    <p>An autonomous engine mapping enterprise tech stacks to business capabilities. Built for modern digital consulting.</p>
-                    <span class="project-link">Learn more &gt;</span>
-                </a>
-
-                <!-- Audio Renamer -->
-                <a href="projects/ai-audio-renamer.html" class="project-card">
-                    <h3>AI Audio Renamer</h3>
-                    <p>Bulk semantic renaming for artists. Uses theme-aware unique words to organize recording sessions intelligently.</p>
-                    <span class="project-link">Learn more &gt;</span>
-                </a>
-
-                <!-- ThrottleApp -->
-                <a href="projects/throttle-app.html" class="project-card">
-                    <h3>ThrottleApp.</h3>
-                    <p>Biker-tech ecosystem focusing on ride rituals and platform consistency for the global rider community.</p>
-                    <span class="project-link">Learn more &gt;</span>
-                </a>
-
-                <!-- Dentist Engine -->
-                <a href="projects/dentist-engine.html" class="project-card">
-                    <h3>Dentist Revenue Engine</h3>
-                    <p>Automated growth pipeline for dental practices, from lead discovery to personalized outreach.</p>
-                    <span class="project-link">Learn more &gt;</span>
-                </a>
-
-                <!-- Case Studies -->
-                <a href="Autonomous-Ops-Execution.pdf" class="project-card">
-                    <h3>Autonomous Ops Execution</h3>
-                    <p>Deep dive into operational automation and enterprise strategy. (Case Study PDF)</p>
-                    <span class="project-link">View Case Study &gt;</span>
-                </a>
-
-                <a href="Case-Study-2.pdf" class="project-card">
-                    <h3>Enterprise Case Study</h3>
-                    <p>Detailed analysis of enterprise architecture and digital transformation outcomes. (PDF)</p>
-                    <span class="project-link">View Case Study &gt;</span>
-                </a>
+            <div>
+                <h4 style="font-size:24px; margin-bottom:10px;">Design</h4>
+                <p style="color:var(--secondary-text)">Apple-Minimalist UX & Prototyping</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
-            <p>Handcrafted by Clawy 🦾</p>
-        </footer>
-    </div>
+    <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
+        <p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p>
+    </footer>
 </body>
 </html>
