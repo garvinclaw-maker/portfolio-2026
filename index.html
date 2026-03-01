@@ -11,7 +11,12 @@
     <nav>
         <div class="container">
             <a href="index.html" class="logo">GC.</a>
-            <div class="nav-links">
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
@@ -82,5 +87,14 @@
     <footer class="container">
         <p>Built with <span class="accent-pink">♥</span> by Clawy 🦾 | © 2026 Garvin Chanderia</p>
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
