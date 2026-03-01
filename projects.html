@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Garvin Chanderia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .filter-nav { margin-bottom: 40px; text-align: center; }
+        .filter-nav button { background: none; border: none; font-size: 16px; color: var(--secondary-text); cursor: pointer; margin: 0 15px; padding-bottom: 5px; }
+        .filter-nav button.active { color: var(--text-color); border-bottom: 2px solid var(--accent-color); font-weight: 600; }
+        .project-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .project-card { background: var(--card-bg); border-radius: 24px; padding: 30px; text-decoration: none; color: inherit; transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 { font-size: 24px; margin-bottom: 10px; }
+        .project-card p { color: var(--secondary-text); font-size: 16px; margin-bottom: 15px; }
+        .tag { font-size: 12px; font-weight: 700; color: var(--accent-color); text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">GC.</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 120px;">
+        <h1 style="font-size: 48px; margin-bottom: 40px;">Selected Work.</h1>
+        
+        <div class="project-list">
+            <!-- AI & Product Engineering -->
+            <a href="projects/ea-skill-engine.html" class="project-card">
+                <span class="tag">AI & Architecture</span>
+                <h3>EA Skill Engine</h3>
+                <p>Autonomous capability mapping using LLMs to align IT stacks with business capabilities.</p>
+            </a>
+
+            <a href="projects/throttle-app.html" class="project-card">
+                <span class="tag">Product Management</span>
+                <h3>ThrottleApp</h3>
+                <p>A biker-tech ecosystem focused on safety, connectivity, and automated trip logging.</p>
+            </a>
+
+            <a href="projects/ai-audio-renamer.html" class="project-card">
+                <span class="tag">AI Engineering</span>
+                <h3>AI Audio Renamer</h3>
+                <p>Semantic file organization tool for music producers using OpenAI/Ollama.</p>
+            </a>
+
+            <a href="projects/smartwatch-landscape.html" class="project-card">
+                <span class="tag">Product Strategy</span>
+                <h3>Smartwatch Landscape</h3>
+                <p>Deep-dive market analysis and product evolution mapping for the wearables sector.</p>
+            </a>
+
+            <a href="projects/pm-outreach.html" class="project-card">
+                <span class="tag">Automation</span>
+                <h3>PM Outreach Engine</h3>
+                <p>Scaling professional networking using OpenClaw to target 18+ LPA PM roles.</p>
+            </a>
+
+            <a href="projects/nas-ubuntu-casaos.html" class="project-card">
+                <span class="tag">Hardware & Infrastructure</span>
+                <h3>Laptop NAS (CasaOS)</h3>
+                <p>Repurposing old hardware into a high-performance local cloud using Ubuntu Server.</p>
+            </a>
+
+            <a href="projects/dentist-gym-outreach.html" class="project-card">
+                <span class="tag">Business Automation</span>
+                <h3>Outreach Orchestrator</h3>
+                <p>Cold-reach automation engines for Dental and Gym leads using Agentic workflows.</p>
+            </a>
+
+            <a href="projects/hr-offboarding.html" class="project-card">
+                <span class="tag">Product Ops</span>
+                <h3>HR Offboarding Automation</h3>
+                <p>Streamlining internal operations using OpenClaw and automated presentation generation.</p>
+            </a>
+
+            <a href="projects/clawboard.html" class="project-card">
+                <span class="tag">UX & Design</span>
+                <h3>ClawBoard</h3>
+                <p>A unified dashboard for tracking AI agent tasks and system health.</p>
+            </a>
+
+            <a href="https://www.behance.net/gallery/195570909/Google-Keep-Case-Study" class="project-card">
+                <span class="tag">Case Study</span>
+                <h3>Google Keep: Monetization</h3>
+                <p>A product strategy case study focused on user retention and premium conversion.</p>
+            </a>
+            
+            <a href="https://www.behance.net/gallery/195580303/Tesseract-Case-Study" class="project-card">
+                <span class="tag">Case Study</span>
+                <h3>Tesseract Travel</h3>
+                <p>A travel-tech product case study exploring personalized experience booking.</p>
+            </a>
+        </div>
+    </main>
+
+    <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
+        <p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p>
+    </footer>
+</body>
+</html>

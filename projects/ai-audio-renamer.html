@@ -9,36 +9,43 @@
 <body>
     <nav>
         <div class="container">
-            <a href="../index.html" class="logo" style="text-decoration:none; color:inherit; font-weight:600; font-size:14px;">GC.</a>
+            <a href="../index.html" class="logo">GC.</a>
             <div class="nav-links">
-                <a href="../index.html#work">Work</a>
-                <a href="mailto:chanderia.10.garvin@gmail.com">Contact</a>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../contact.html">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div class="container" style="padding-top: 100px;">
-        <article style="max-width: 700px; margin: 0 auto;">
-            <h1 style="font-size: 48px; margin-bottom: 24px;">AI Audio Renamer</h1>
-            <p style="font-size: 24px; color: var(--secondary-text); margin-bottom: 40px;">Intelligent semantic file organization for recording artists.</p>
-            
-            <div style="font-size: 19px; line-height: 1.6;">
-                <h2>Overview</h2>
-                <p>Designed for the creative chaos of music recording, this AI-powered utility solves the problem of generic audio file naming (e.g., "Audio_Track_01.wav"). It uses Large Language Models to generate unique, theme-specific names based on the artist's creative direction.</p>
+    <main class="container" style="padding-top: 120px;">
+        <article style="max-width: 800px; margin: 0 auto;">
+            <span class="accent-pink" style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">AI Engineering</span>
+            <h1 style="font-size: 56px; margin-top: 10px; margin-bottom: 20px;">AI Audio Renamer.</h1>
+            <p style="font-size: 24px; color: var(--secondary-text); line-height: 1.4; margin-bottom: 40px;">
+                Semantic file organization for recording artists and music producers.
+            </p>
+
+            <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
+                <h2>Problem</h2>
+                <p>Music producers often deal with thousands of audio files with cryptic names like "REC001.wav." Manually renaming these to reflect the vibe or content of the audio is a time-consuming manual process that halts creative flow.</p>
+
+                <h2 style="margin-top: 40px;">Solution</h2>
+                <p>The AI Audio Renamer uses an autonomous agentic workflow to scan audio directories. It generates theme-based, evocative names for audio files based on producer preferences, using LLMs (OpenAI/Ollama) to ensure semantic relevance and consistency.</p>
+
+                <h2 style="margin-top: 40px;">Implementation</h2>
+                <p>The engine is built to interface with local file systems, allowing producers to "refactor" their entire sample library with a single command while maintaining the original metadata.</p>
                 
-                <br>
-                <h2>The Creative Edge</h2>
-                <p>Instead of manual renaming, the artist shares a "theme" or "mood" (e.g., "Cyberpunk", "Oceanic Drift"). The engine then bulk-renames all session files with evocative, non-repeating words that match that vibe. This makes searching through takes much more intuitive and keeps the creative momentum high.</p>
-                
-                <br>
-                <h2>Impact</h2>
-                <p>Streamlines the post-recording workflow for independent artists, allowing them to spend less time on file management and more time on the mix.</p>
+                <div style="margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 28px;">
+                    <p><strong>Stack:</strong> Python, OpenClaw, Ollama, OpenAI API</p>
+                </div>
             </div>
         </article>
+    </main>
 
-        <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
-            <p>Built with Clawy 🦾</p>
-        </footer>
-    </div>
+    <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
+        <p>Built with Clawy 🦾</p>
+    </footer>
 </body>
 </html>
